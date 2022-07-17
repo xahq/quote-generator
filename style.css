@@ -38,6 +38,10 @@ body{
     font-size: xx-large;
 }
 
+#generateQuote:hover{
+    filter: brightness(90%);
+}
+
 #quote{
     width: 640px;
     height: 640px;

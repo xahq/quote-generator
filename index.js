@@ -1,14 +1,10 @@
 let quote = document.getElementById("quote");
 let generate = document.getElementById("generateQuote");
 
-function onMouseEnter(){
+function mouseListener(){
     if (!generate.classList.contains("hover")){
         generate.classList.add("hover");
-    }
-}
-
-function onMouseLeave(){
-    if (generate.classList.contains("hover")){
+    } else{
         generate.classList.remove("hover");
     }
 }
@@ -26,8 +22,8 @@ function getQuote(){
     })
 }
 
-generate.addEventListener("mouseenter", onMouseEnter)
+generate.addEventListener("mouseenter", mouseListener)
 
-generate.addEventListener("mouseleave", onMouseLeave)
+generate.addEventListener("mouseleave", mouseListener)
 
 generate.addEventListener("click", getQuote)
